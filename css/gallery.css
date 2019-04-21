@@ -1,0 +1,20 @@
+.banner{
+	overflow: hidden;
+	position: relative;
+}
+.banner video{
+	/*filter:grayscale(100%);*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.content{
+	height: 980px;
+	background-color: transparent;
+	/*box-shadow: none;*/
+	padding-top: 20px;
+}
+.type_tag{
+	width: 50%;
+}

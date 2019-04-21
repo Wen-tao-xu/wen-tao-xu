@@ -80,6 +80,15 @@
 	line-height: 35px;
 	margin: 0px auto 20px;
 }
+.article_title a{
+	display: inline-block;
+	color: #2697E6;
+	text-shadow: 1px 3px 5px #2697E6;
+	transition: 0.2s linear;
+}
+.article_title a:hover{
+	transform: scale(1.05);
+}
 .recom_content .article_title{
 	width: 260px;
 }

@@ -1,0 +1,125 @@
+.footer{
+	padding-top: 30px;
+	margin-top: 0;
+}
+.banner{
+	overflow: hidden;
+	position: relative;
+}
+.banner video{
+	filter:grayscale(10%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.content{
+	height: 980px;
+	background-color: transparent;
+	box-shadow: none;
+	padding-top: 20px;
+	position: relative;
+	overflow: hidden;
+	 text-shadow: 1px 1px 2px #333;
+}
+.content h3{
+	letter-spacing: 10px;
+	font-size: 50px;
+	color: #fff;
+	margin: 30px 0 10px;
+}
+.content .iconlink a{
+	font-size: 24px;
+	letter-spacing: 20px;
+	color: #fff;
+}
+.content .iconlink a:hover{
+	color: #13C5EB;
+}
+.message{
+	flex-flow: column;
+	align-items: flex-start;
+	font-size: 16px;
+}
+.message label{
+	color: #fff;
+}
+.message input{
+	width: 350px;
+	height: 40px;
+	line-height: 40px;
+	margin: 20px 0;
+	text-indent: 1em;
+	border: 1px solid #fff;
+	background-color: transparent;
+	color: #fff;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+    color:#DBDBDB;
+    text-shadow: 1px 1px 2px #333;
+}
+input::-moz-placeholder,textarea::-moz-placeholder{   /* Mozilla Firefox 19+ */
+     color:#DBDBDB;
+      text-shadow: 1px 1px 2px #333;
+}
+input:-moz-placeholder,textarea:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#DBDBDB;
+    text-shadow: 1px 1px 2px #333;
+}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#DBDBDB;
+     text-shadow: 1px 1px 2px #333;
+}
+
+#msg{
+	vertical-align: top;
+	width: 500px;
+	height: 400px;
+	line-height: 24px;
+	padding: 10px 8px 15px 0;
+	resize: none;
+	text-indent: 1em;
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 14px;
+}
+.submit{
+	border: 1px solid #ddd;
+	height: 40px;
+	line-height: 40px;
+	width: 120px;
+	color: #fff;
+	margin: 20px 0;
+	font-size: 18px;
+	align-self: flex-end;
+}
+.submit:hover{
+	cursor: pointer;
+}
+/*引用百度地图API*/
+#dituContent{
+	width:100%;
+	/*height:650px;*/
+	/*border:1px solid #ccc;*/
+	position: absolute;
+	top: 170px;
+	left: 0;
+	height: 0;
+	transition: 0.5s linear;
+}
+.iw_poi_title{
+	color:#CC5522;
+	font-size:14px;
+	font-weight:bold;
+	overflow:hidden;
+	padding-right:13px;
+	white-space:nowrap
+}
+.iw_poi_content{
+	font:12px arial,sans-serif;
+	overflow:visible;
+	padding-top:4px;
+	white-space:-moz-pre-wrap;
+	word-wrap:break-word
+}

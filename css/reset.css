@@ -32,13 +32,19 @@ table{
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-input[type="button"]{
+input{
 	outline: none;
+}
+input[type="button"]{
 	cursor: pointer;
 }
 button{
+	outline: none;
 	background: none;
 	border: none;
+}
+textarea{
+	outline: none;
 }
 /*公共样式*/
 
@@ -78,7 +84,7 @@ button{
 .activelink{
 	color: #2697E6;
 }
-/*header-footer*/
+/*header-footer公共样式*/
 .wrap{
 	min-width: 1200px;
 	height: auto;
@@ -101,6 +107,17 @@ button{
 	width: 1200px;
 	margin: 0 auto;
 	line-height: 30px;
+}
+/*顶部logo*/
+.logotop img{
+	width: 100px;
+}
+.lefts{
+	width: 13%;
+}
+.iconname{
+	font-size: 12px;
+	vertical-align: middle;
 }
 .left{
 	width:25%;
@@ -157,7 +174,6 @@ button{
 	height: 0;
 	overflow: hidden; 
 	transition: 0.4s linear;
-	z-index: 99;
 }
 .morelist>li{
 	text-align: center;
