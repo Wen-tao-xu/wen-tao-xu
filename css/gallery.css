@@ -49,6 +49,17 @@
 	width: 40px;
 	line-height: 30px;
 }
+.morebox i{
+	font-size: 60px;
+}
+.iconjiantou{
+	display: inline-block;
+	position: absolute;
+	top: -15px;
+	left: -45px;
+	transform: rotate(130deg);
+	transition: 0.2s linear;
+}
 .type_tags>li{
 	margin-left: 15px;
 }
@@ -59,6 +70,13 @@
 	width: 80px;
 	border: 1px solid #ddd;
 	border-radius: 5px;
+}
+.active{
+	background-color: #44B3EF;
+	color: #fff;
+}
+.active:hover{
+	color: #fff;
 }
 .type_tags>li>a span{
 	font-size: 8px;
@@ -151,6 +169,9 @@
 	left: 0;
 }
 /*图片预览*/
+.showimg{
+	display: none;
+}
 .over{
 	position: absolute;
 	width: 100%;
@@ -159,9 +180,32 @@
 	left: 0;
 	background: rgba(0,0,0,.6);
 }
+.over .icondelete{
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	font-size: 30px;
+	color: #FF0099;
+}
 .preimg{
 	width: 80%;
+	position: relative;
 }
 .preimg img{
 	width: 100%;
+}
+/*查看更多按钮*/
+.seemore{
+	width: 150px;
+	height: 45px;
+	background-color: #fff;
+	border: 1px solid #FF00A5;
+	color: #FF00A5;
+	font-size:16px;
+	transition: 0.2s linear;
+}
+.seemore:hover{
+	color: #fff;
+	background-color: #FF00A5;
+	border-color: #fff;
 }

@@ -1,0 +1,139 @@
+html,body{
+	height: 100%;
+}
+.wrap{
+	min-height: 100%;
+	background:url(../images/mountain2.png) no-repeat center center;
+	background-size: cover;
+	flex-direction: column;
+}
+.logo{
+	width:400px;
+	margin-bottom: 50px;
+}
+.main{
+	width: 50%;
+	height: 488px;
+	background-color:rgba(0,0,0,.5);
+	border-radius: 10px;
+	overflow: hidden;
+	color: #fff;
+	position: relative;
+	margin-bottom: 130px;
+}
+.leftside,.leftsidefu{
+	width: 60%;
+	padding: 40px 20px 100px;
+	position: relative;
+	box-sizing: border-box;
+	transition: 0.5s linear;
+}
+.leftside{
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*left: -600px;*/
+}
+.leftsidefu{
+	position: absolute;
+	right: -60%;
+	/*left: 0*/
+}
+.iconpull{
+	font-size: 60px;
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	color: #ddd;
+	animation: pull 1s linear infinite;
+}
+.iconpull:hover{
+	cursor: pointer;
+}
+@keyframes pull{
+	0%,100%{
+		left: -12%;
+		color: #fff;
+	}
+	50%{
+		left: -14%;
+		color: #ddd;
+	}
+}
+.rightside{
+	width: 40%;
+	height: 100%;
+	background: url(../images/man.png) no-repeat center left;
+	background-size: cover;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: .5s linear;
+}
+.page{
+	position: absolute;
+	height: 30px;
+	top: 30px;
+	left: 30px;
+	color: #666;
+}
+.page a{
+	transition: 0.2s linear
+}
+.page a:hover{
+	cursor: pointer;
+	display: inline-block;
+	transform: scale(1.1);
+}
+.page a:hover{
+	color: #fff;
+}
+.thistag{
+	color: #45B3E4;
+	font-size: 16px;
+}
+.content{
+	width: 55%;
+	margin: 50px 0 30px;
+	text-align: center;
+}
+.content h3{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.content form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.content input{
+	height: 38px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+}
+.email,.password,.passwordb{
+	text-indent: 1em;
+	background-color: #fff;
+	border: 1px solid #fff;
+}
+.email{
+	margin-top: 20px;
+}
+.loginbtn,.regiterbtn{
+	background-color: #45B3E4;
+	border: 1px solid #45B3E4;
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 5px;
+}
+.find_code{
+	color: #fff;
+	font-size: 12px;
+}
+.copylogin{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	font-size: 12px;
+	transform: scale(0.8);
+}

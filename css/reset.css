@@ -206,8 +206,9 @@ textarea{
 	margin: auto;
 }
 .right{
-	width: 25%;
+	width: 20%;
 	position: relative;
+	margin-right: 10px;
 }
 .right .search{
 	width: 100%;

@@ -93,7 +93,8 @@ window.onload=function(){
                     pagebtn[j].classList.remove("page_active")
                 }
                 page[this.index].style.display="block";
-                this.classList.add("page_active")
+                this.classList.add("page_active");
+                document.documentElement.scrollTop=page[this.index].offsetTop-20;
             }            
         }
     }
