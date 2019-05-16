@@ -1,57 +1,4 @@
 window.onload=function(){
-// 3D盒子按钮控制
-    var next=document.getElementById("next_btn");
-    var prev=document.getElementById("prev_btn");
-    var box3ds=document.getElementsByClassName("box3d");
-    var rang=0;
-    // 向左，前一面
-    prev.onclick=function(){
-        rang-=90;
-        for(let i=0;i<box3ds.length;i++){
-            box3ds[i].style.transform="rotateY("+rang+"deg)"
-        }
-        // console.log(rang);
-    }
-    // 向右，后一面
-    next.onclick=function(){
-        rang+=90;
-        for(let i=0;i<box3ds.length;i++){
-            box3ds[i].style.transform="rotateY("+rang+"deg)"
-        }
-        // console.log(rang);
-    }
-// 微信 QQ 二维码
-    var qq=document.getElementsByClassName("qq")[0];
-    var wechat=document.getElementsByClassName("wechat")[0];
-    var codepic=document.getElementsByClassName("codepic");
-
-    wechat.onmouseover=function(){
-        codepic[0].style.opacity="1"
-    }
-    wechat.onmouseout=function(){
-        codepic[0].style.opacity="0"
-    }
-    qq.onmouseover=function(){
-        codepic[1].style.opacity="1"
-    }
-    qq.onmouseout=function(){
-        codepic[1].style.opacity="0"
-    }
-// 更多按钮
-    var spaceBtn=document.getElementsByClassName("space")[0];
-    var spaceBox=document.getElementsByClassName("space_box")[0];
-    spaceBtn.onclick=function(e){
-         e.stopPropagation();
-        if(spaceBox.style.height=="" || spaceBox.style.height=="0px"){
-            spaceBox.style.height="100px"
-        }else{
-            spaceBox.style.height="0"
-        }
-        
-    }
-    document.onclick=function(){
-        spaceBox.style.height="0";
-    }
 //二级菜单
     var menu=document.getElementsByClassName("menu")[0];
     var iconrect=menu.getElementsByClassName("iconrect");//三角icon
@@ -77,25 +24,6 @@ window.onload=function(){
                 iconrect[this.index].style.transform=""
             }
             
-        }
-    }
-// 选项卡切换--首页页面切换
-    var page=document.getElementsByClassName("page");
-    var pageBtnBox=document.getElementsByClassName("pagebtn")[0];
-    var pagebtn=pageBtnBox.getElementsByTagName("li")
-    // console.log(page.length)
-    for(let i=0;i<pagebtn.length;i++){
-        pagebtn[i].index=i;
-        pagebtn[i].onclick=function(){
-            if (page[this.index].style.display!="block") {
-                for(let j=0;j<pagebtn.length;j++){
-                    page[j].style.display="none";
-                    pagebtn[j].classList.remove("page_active")
-                }
-                page[this.index].style.display="block";
-                this.classList.add("page_active");
-                document.documentElement.scrollTop=page[this.index].offsetTop-20;
-            }            
         }
     }
 // 标签云删除按钮
@@ -137,6 +65,80 @@ window.onload=function(){
         }
     }
     hov();
+
+// 3D盒子按钮控制
+    var next=document.getElementById("next_btn");
+    var prev=document.getElementById("prev_btn");
+    var box3ds=document.getElementsByClassName("box3d");
+    var rang=0;
+    // 向左，前一面
+    prev.onclick=function(){
+        rang-=90;
+        for(let i=0;i<box3ds.length;i++){
+            box3ds[i].style.transform="rotateY("+rang+"deg)"
+        }
+        // console.log(rang);
+    }
+    // 向右，后一面
+    next.onclick=function(){
+        rang+=90;
+        for(let i=0;i<box3ds.length;i++){
+            box3ds[i].style.transform="rotateY("+rang+"deg)"
+        }
+        // console.log(rang);
+    }
+// 选项卡切换--首页页面切换
+    var page=document.getElementsByClassName("page");
+    var pageBtnBox=document.getElementsByClassName("pagebtn")[0];
+    var pagebtn=pageBtnBox.getElementsByTagName("li")
+    // console.log(page.length)
+    for(let i=0;i<pagebtn.length;i++){
+        pagebtn[i].index=i;
+        pagebtn[i].onclick=function(){
+            if (page[this.index].style.display!="block") {
+                for(let j=0;j<pagebtn.length;j++){
+                    page[j].style.display="none";
+                    pagebtn[j].classList.remove("page_active")
+                }
+                page[this.index].style.display="block";
+                this.classList.add("page_active");
+                document.documentElement.scrollTop=page[this.index].offsetTop-20;
+            }            
+        }
+    }
+    
+// 微信 QQ 二维码
+    var qq=document.getElementsByClassName("qq")[0];
+    var wechat=document.getElementsByClassName("wechat")[0];
+    var codepic=document.getElementsByClassName("codepic");
+
+    wechat.onmouseover=function(){
+        codepic[0].style.opacity="1"
+    }
+    wechat.onmouseout=function(){
+        codepic[0].style.opacity="0"
+    }
+    qq.onmouseover=function(){
+        codepic[1].style.opacity="1"
+    }
+    qq.onmouseout=function(){
+        codepic[1].style.opacity="0"
+    }
+// 更多按钮
+    var spaceBtn=document.getElementsByClassName("space")[0];
+    var spaceBox=document.getElementsByClassName("space_box")[0];
+    spaceBtn.onclick=function(e){
+         e.stopPropagation();
+        if(spaceBox.style.height=="" || spaceBox.style.height=="0px"){
+            spaceBox.style.height="100px"
+        }else{
+            spaceBox.style.height="0"
+        }
+        
+    }
+    document.onclick=function(){
+        spaceBox.style.height="0";
+    }
 
 // 页面底部无缝滚动
     var footerFigure=document.getElementById("footerFigure");

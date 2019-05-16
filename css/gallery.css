@@ -33,11 +33,11 @@
 .morebox:before{
 	content: "";
 	display: inline-block;
-	border: 10px solid transparent;
+	border: 8px solid transparent;
 	border-bottom-color:#666; 
 	position: absolute;
 	right: 20px;
-	top:-20px;
+	top:-16px;
 }
 .morebox>li{
 	border: 1px solid #ddd;
@@ -79,7 +79,7 @@
 	color: #fff;
 }
 .type_tags>li>a span{
-	font-size: 8px;
+	font-size: 12px;
 	display: inline-block;
 	transform: scale(0.8);
 }

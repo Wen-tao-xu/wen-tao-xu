@@ -1,0 +1,224 @@
+.wrap{
+	background: url(../images/wallhaven-761630_1920x1080.png) no-repeat center top;
+	background-attachment: fixed;
+}
+.wrap1200{
+	box-shadow: none;
+}
+.main_content{
+	background-color: transparent;
+	text-align: left;
+}
+.model{
+	margin-top: 10px;
+	padding: 15px 30px 0;
+	background-color: rgba(255,255,255,.5);
+	border: 1px solid transparent;
+	border-radius: 10px;
+	overflow: hidden;
+	color: #fff;
+}
+.model_header{
+	padding-bottom: 20px;
+	/*border: 1px solid #fff;*/
+	line-height: 35px;
+}
+.model_header a{
+	color: #f2f2f2;
+}
+.model_header a:hover{
+	color: #fff;
+}
+.model_title{
+	font-size: 24px;
+	color: #F73079;
+	font-weight: 600;
+	text-shadow: 1px 1px 0 #333;
+}
+.travel{
+	/*height: 1035px;*/
+
+}
+.travel_right{
+	width: 33%;
+	height: 590px;
+	overflow: hidden;
+	border-radius: 10px;
+	position: relative;
+}
+.travel_right img{
+	width: 415px;
+}
+.text{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #f2f2f2;
+	padding: 20px 15px;
+	background-color: rgba(0,0,0,.3);
+}
+.text h3{
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.text p{
+	line-height: 22px;
+	text-indent: 2em;
+}
+.adress{
+	margin-right: 10px;
+	color: #45B4E5;
+}
+.read_all{
+	display: inline-block;
+	width: 80px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	background: #24A9E1;
+	border-radius: 5px;
+	color: #fff;
+	align-self: flex-end;
+}
+.read_all:hover{
+	color: #fff;
+}
+.text_bottom{
+	line-height: 32px;
+	padding: 15px 10px 0;
+}
+.text_bottom .icon{
+	width: 60px;
+}
+.icon i{
+	font-size: 20px;
+}
+.travel_left{
+	width: 65%;
+}
+.left_top{
+	margin-bottom: 50px;
+	border-radius: 8px;
+	padding: 30px 40px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+.travel .left_top{
+	box-sizing: border-box;
+	background:url(../images/wallhaven-471840_1920x1080.png) no-repeat center;
+	background-size: cover;
+	
+}
+.time{
+	margin-left: 10px;
+}
+.txt{
+	box-sizing: border-box;
+	margin: 20px 0;
+	text-indent: 2em;
+	
+}
+.artical{
+	background-color: rgba(0,0,0,.3);
+	padding: 10px 5px;
+	border-radius: 8px;
+	/*margin-bottom: 30px;*/
+}
+.artical h3{
+	font-weight: 600;
+	margin-top: 10px;
+}
+.left_top h3{
+	font-size: 24px;
+}
+.left_bottom li{
+	transition: 0.2s linear;
+	padding-bottom: 45px;
+	position: relative;
+	overflow: hidden;
+}
+.longex{
+	box-sizing: border-box;
+	width: 240px;
+	height: 300px;
+	border-radius: 8px;
+	padding: 20px 10px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	transition: 0.2s linear;
+}
+.left_bottom li:hover{
+	transform: translateY(-40px);
+}
+.left_bottom li:hover .text_bottom{
+	bottom: 0;
+}
+.left_bottom li h3{
+	font-size: 20px;
+}
+.travel .page1{
+	background: url(../images/wallhaven-120008_1920x1080.png) no-repeat center;
+	background-size: cover;
+}
+.travel .page2{
+	background: url(../images/wallhaven-69585_1920x1080.png) no-repeat center;
+	background-size: cover;
+}
+.travel .page3{
+	background: url(../images/wallhaven-185300_1920x1080.png) no-repeat center;
+	background-size: cover;
+}
+.left_bottom .text_bottom{
+	position: absolute;
+	bottom: -47px;
+	width: 92%;
+	transition: 0.2s linear
+}
+.travel .travel_right{
+	background: url(../images/beautiful-beauty-camera-2122955.jpg) no-repeat center;
+	background-size: cover;
+}
+.food .travel_right{
+	background: url(../images/wallhaven-745914_1920x1080.png) no-repeat center;
+	background-size: cover;
+}
+.food .page1{
+	background: url(../images/wallhaven-716013_1920x1080.png) no-repeat center;
+	background-size: cover;
+}
+.food .page2{
+	background: url(../images/wallhaven-734674_1920x1080.png) no-repeat center;
+	background-size: cover;
+}
+.food .page3{
+	background: url(../images/wallhaven-772268_1920x1080.png) no-repeat center;
+	background-size: cover;
+}
+
+.food .left_top{
+	background: url(../images/wallhaven-683135_1920x1080.png) no-repeat center;
+	background-size: cover;
+}
+/*游戏部分*/
+.game .travel_right{
+	background: url(../images/cike.jpg) no-repeat center;
+	background-size: cover;
+}
+.game .page1{
+	background: url(../images/jipinfeic.jpg) no-repeat center;
+	background-size: cover;
+}
+.game .page2{
+	background: url(../images/dipinxian.jpg) no-repeat center;
+	background-size: cover;
+}
+.game .page3{
+	background: url(../images/game1.jpg) no-repeat center;
+	background-size: cover;
+}
+.game .left_top{
+	background: url(../images/gamebj.png) no-repeat center;
+	background-size: cover;
+}
