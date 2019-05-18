@@ -1,4 +1,4 @@
-$(function(){
+// $(function(){
 // 轮播图
 	var widthLi=$(".banner_ul li").eq(0).width();
 	var num=1;
@@ -78,4 +78,4 @@ $(function(){
 	}).mouseout(function(){
 		$(this).find('i').css("animation","")
 	})
-})
+// })

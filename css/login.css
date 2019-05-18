@@ -127,9 +127,10 @@ html,body{
 	font-size: 16px;
 	letter-spacing: 5px;
 }
-.find_code{
+.toa{
 	color: #fff;
 	font-size: 12px;
+	z-index: 100;
 }
 .copylogin{
 	position: absolute;
@@ -138,3 +139,63 @@ html,body{
 	font-size: 12px;
 	transform: scale(0.8);
 }
+/* 弹窗 */
+.info{
+	height: 40px;
+	width: 200px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	box-shadow: 0 0 1px #eee;
+	background-color: azure;
+	position:absolute;
+	top:73%;
+	left:20%;
+	color:#333;
+	z-index: 99;
+	opacity: 0;
+	transition: 0.2s linear;
+}
+.info .icondelete{
+	position: absolute;
+	right: -8px;
+	top: -8px;
+	color:#FF0099;
+	cursor: pointer;
+}
+@keyframes rubberBand {
+	from {
+	  transform: scale3d(1, 1, 1);
+	}
+  
+	30% {
+	  transform: scale3d(1.25, 0.75, 1);
+	}
+  
+	40% {
+	  transform: scale3d(0.75, 1.25, 1);
+	}
+  
+	50% {
+	  transform: scale3d(1.15, 0.85, 1);
+	}
+  
+	65% {
+	  transform: scale3d(0.95, 1.05, 1);
+	}
+  
+	75% {
+	  transform: scale3d(1.05, 0.95, 1);
+	}
+  
+	to {
+	  transform: scale3d(1, 1, 1);
+	}
+  }
+  
+  .rubberBand {
+	animation: rubberBand 1s linear 0.2s;
+  }
+  .show{
+	opacity: 1;
+	z-index: 101;
+  }

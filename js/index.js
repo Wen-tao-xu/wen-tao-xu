@@ -1,4 +1,3 @@
-window.onload=function(){
 //二级菜单
     var menu=document.getElementsByClassName("menu")[0];
     var iconrect=menu.getElementsByClassName("iconrect");//三角icon
@@ -139,30 +138,3 @@ window.onload=function(){
     document.onclick=function(){
         spaceBox.style.height="0";
     }
-
-// 页面底部无缝滚动
-    var footerFigure=document.getElementById("footerFigure");
-    var lis=footerFigure.getElementsByTagName('li');
-    var speed=-2;
-
-    footerFigure.innerHTML=footerFigure.innerHTML+footerFigure.innerHTML;
-    footerFigure.style.width=lis[0].offsetWidth*lis.length+'px';
-
-    function move(){
-        if(footerFigure.offsetLeft<-footerFigure.offsetWidth/2){
-            footerFigure.style.left=0;
-        }
-        if(footerFigure.offsetLeft>0){
-            footerFigure.style.left=-footerFigure.offsetWidth/2+"px";
-        }
-            footerFigure.style.left=footerFigure.offsetLeft+speed+"px";
-    }
-    timer=setInterval(move,30);
-    footerFigure.onmouseover=function(){
-        clearInterval(timer)
-    }
-    footerFigure.onmouseout=function(){
-        timer=setInterval(move,30);
-    }
-
-}

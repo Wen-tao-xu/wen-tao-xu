@@ -8,7 +8,7 @@ body{
 	background-size: cover;
 	font-size: 14px;
 	color: #333;
-	font-family: sans-serif,Î¢ÈíÑÅºÚ;
+	font-family: sans-serif,Î¢ï¿½ï¿½ï¿½Åºï¿½;
 }
 h1,h2,h3,h4,h5,h6{
 	font-weight: normal;
@@ -46,7 +46,7 @@ button{
 textarea{
 	outline: none;
 }
-/*¹«¹²ÑùÊ½*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½*/
 
 .flexrow{
 	display: flex;
@@ -72,7 +72,7 @@ textarea{
 	color: #FB0C29;
 	transform: scale(1.05);
 }
-/*ÎÄ±¾³¬³öÒþ²Ø£¬ÏÔÊ¾Ê¡ÂÔºÅ*/
+/*ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø£ï¿½ï¿½ï¿½Ê¾Ê¡ï¿½Ôºï¿½*/
 .text_over{
 	word-break: break-all;
 	display: -webkit-box;
@@ -80,11 +80,11 @@ textarea{
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-/* ¼¤»îµÄaÁ¬½Ó */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½aï¿½ï¿½ï¿½ï¿½ */
 .activelink{
 	color: #2697E6;
 }
-/*header-footer¹«¹²ÑùÊ½*/
+/*header-footerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½*/
 .wrap{
 	min-width: 1200px;
 	height: auto;
@@ -108,7 +108,7 @@ textarea{
 	margin: 0 auto;
 	line-height: 30px;
 }
-/*¶¥²¿logo*/
+/*ï¿½ï¿½ï¿½ï¿½logo*/
 .logotop img{
 	width: 100px;
 }
@@ -161,7 +161,7 @@ textarea{
 .codepic img{
 	width: 120px;
 }
-/*more¸ü¶à°´Å¥*/
+/*moreï¿½ï¿½ï¿½à°´Å¥*/
 .more{
 	position: relative;
 }
@@ -209,6 +209,7 @@ textarea{
 	width: 20%;
 	position: relative;
 	margin-right: 10px;
+	transition: 0.2s linear;
 }
 .right .search{
 	width: 100%;
@@ -262,7 +263,7 @@ textarea{
 .footer_figure>ul>li img:hover{
 	transform: scale(1.2);
 }
-/*qq ÄÇÐ©Í¼±ê*/
+/*qq ï¿½ï¿½Ð©Í¼ï¿½ï¿½*/
 .bottom_icon{
 	margin: 0 auto;
 }
@@ -286,7 +287,7 @@ textarea{
 	color: #FEFEFE;
 	text-shadow: 0 0 1px #000;
 }
-/*Ò³Ãæµ×²¿µ¼º½À¸*/
+/*Ò³ï¿½ï¿½×²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .foot_head{
 	border: 1px solid #fff;
 	box-shadow: 0 0 2px #fff;
@@ -329,3 +330,12 @@ textarea{
 	background-color: #383838;
 	margin-bottom: 10px;
 }
+/* #state{
+	width: 10%;
+	overflow: hidden;
+} */
+/* #state a:nth-of-type(1){
+	display: inline-block;
+	width: 20px;
+	overflow: hidden;
+} */
