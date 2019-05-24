@@ -199,6 +199,7 @@
 .types a[class="iconfont iconshanchu"]{
 	color: red;
 	font-size: 26px;
+	display: none;
 }
 .ps_author{
 	color: #45B4E5;
@@ -283,4 +284,38 @@
 }
 .recommend_link img:hover{
 	transform: scale(1.1);
+}
+/* 详情页 */
+.main{
+	text-align: left;
+}
+.header h3{
+	font-size: 18px;
+	font-weight: 600;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #45b4e5;
+}
+.step{
+	padding-top: 20px;
+}
+.production{
+	padding-bottom: 20px;
+}
+.production,.steps_img{
+	width: 100%;
+	overflow: hidden;
+}
+.production>img,.steps_img>img{
+	width: 100%;
+}
+.steps h3{
+	font-weight: 600;
+	padding: 20px 0 10px;
+}
+.steps_img{
+	padding-top: 20px;
+}
+.see_origin{
+	padding-top: 10px;
+	text-align: right
 }

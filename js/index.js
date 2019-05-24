@@ -1,3 +1,4 @@
+window.onload=function(){
 //二级菜单
     var menu=document.getElementsByClassName("menu")[0];
     var iconrect=menu.getElementsByClassName("iconrect");//三角icon
@@ -25,46 +26,48 @@
             
         }
     }
-// 标签云删除按钮
-    var tagBox=document.getElementsByClassName("tag_box")[0];
-    var tagLis=tagBox.getElementsByTagName("a");
-    var delBtn=document.getElementsByClassName("delete_this");
+// // 标签云删除按钮
+//     var tagBox=document.getElementsByClassName("tag_box")[0];
+//     var tagLis=tagBox.getElementsByTagName("a");
+//     var delBtn=document.getElementsByClassName("delete_this");
 
-    for(var i=0;i<delBtn.length;i++){
-        // 点击删除
-        delBtn[i].onclick=function(){
-            this.parentNode.remove();
-            hov();
-        };
+//     for(var i=0;i<delBtn.length;i++){
+//         // 点击删除
+//         delBtn[i].onclick=function(){
+//             this.parentNode.remove();
+//             hov();
+//         };
 
-    }
-    // 鼠标移入移出显示删除按钮事件
-    function hov(){
-        for(var i=0;i<tagLis.length;i++){
-            tagLis[i].index=i;
-            delBtn[i].indexs=i;
-            // 鼠标移入
-            tagLis[i].onmouseover=function(){
-                delBtn[this.index].style.display="block";
-                this.style.transform="scale(1.1)"
-            };
-            delBtn[i].onmouseover=function(){
-                this.style.display="block";
-                tagLis[this.indexs].style.transform="scale(1.1)"
-            }
-            // 鼠标移出
-            tagLis[i].onmouseout=function(){
-                delBtn[this.index].style.display="none"
-                this.style.transform=""
-            }
-            delBtn[i].onmouseout=function(){
-                this.style.display="none";
-                tagLis[this.indexs].style.transform=""
-            }
-        }
-    }
-    hov();
+//     }
+//     // 鼠标移入移出显示删除按钮事件
+//     function hov(){
+//         for(var i=0;i<tagLis.length;i++){
+//             tagLis[i].index=i;
+//             delBtn[i].indexs=i;
+//             // 鼠标移入
+//             tagLis[i].onmouseover=function(){
+//                 delBtn[this.index].style.display="block";
+//                 this.style.transform="scale(1.1)"
+//             };
+//             delBtn[i].onmouseover=function(){
+//                 this.style.display="block";
+//                 tagLis[this.indexs].style.transform="scale(1.1)"
+//             }
+//             // 鼠标移出
+//             tagLis[i].onmouseout=function(){
+//                 delBtn[this.index].style.display="none"
+//                 this.style.transform=""
+//             }
+//             delBtn[i].onmouseout=function(){
+//                 this.style.display="none";
+//                 tagLis[this.indexs].style.transform=""
+//             }
+//         }
+//     }
+//     hov();
 
+    // console.log(window.location.href)
+if(window.location.href.indexOf("index")!=-1){
 // 3D盒子按钮控制
     var next=document.getElementById("next_btn");
     var prev=document.getElementById("prev_btn");
@@ -87,25 +90,37 @@
         // console.log(rang);
     }
 // 选项卡切换--首页页面切换
-    var page=document.getElementsByClassName("page");
+    var pages=document.getElementsByClassName("page");
     var pageBtnBox=document.getElementsByClassName("pagebtn")[0];
     var pagebtn=pageBtnBox.getElementsByTagName("li")
     // console.log(page.length)
     for(let i=0;i<pagebtn.length;i++){
         pagebtn[i].index=i;
         pagebtn[i].onclick=function(){
-            if (page[this.index].style.display!="block") {
+            if (pages[this.index].style.display!="block") {
                 for(let j=0;j<pagebtn.length;j++){
-                    page[j].style.display="none";
+                    pages[j].style.display="none";
                     pagebtn[j].classList.remove("page_active")
                 }
-                page[this.index].style.display="block";
+                pages[this.index].style.display="block";
                 this.classList.add("page_active");
-                document.documentElement.scrollTop=page[this.index].offsetTop-20;
+
+                var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+                // 距离窗口顶端位置
+                var pagesTop=pages[this.index].getBoundingClientRect().top;
+                var speed=Math.floor(scrollTop/20);
+                console.log(speed)
+                var pageoffsetTop=document.documentElement.scrollTop+pagesTop;
+                var timer=setInterval(function(){
+                    if(document.documentElement.scrollTop>pageoffsetTop){
+                        document.documentElement.scrollTop-=speed;
+                    }else{
+                        clearInterval(timer);
+                    }
+                },30);
             }            
         }
     }
-    
 // 微信 QQ 二维码
     var qq=document.getElementsByClassName("qq")[0];
     var wechat=document.getElementsByClassName("wechat")[0];
@@ -123,6 +138,7 @@
     qq.onmouseout=function(){
         codepic[1].style.opacity="0"
     }
+
 // 更多按钮
     var spaceBtn=document.getElementsByClassName("space")[0];
     var spaceBox=document.getElementsByClassName("space_box")[0];
@@ -138,3 +154,6 @@
     document.onclick=function(){
         spaceBox.style.height="0";
     }
+}
+
+}

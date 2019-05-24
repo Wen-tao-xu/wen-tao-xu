@@ -8,7 +8,7 @@ body{
 	background-size: cover;
 	font-size: 14px;
 	color: #333;
-	font-family: sans-serif,΢���ź�;
+	font-family: sans-serif,'微软雅黑';
 }
 h1,h2,h3,h4,h5,h6{
 	font-weight: normal;
@@ -52,6 +52,7 @@ textarea{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
+	align-items: flex-start;
 }
 .flexcol_center{
 	display: flex;
@@ -59,8 +60,10 @@ textarea{
 	align-items: center;
 } 
 .red_btn{
+	display: inline-block;
 	width: 150px;
 	height: 40px;
+	line-height: 40px;
 	margin: 20px;
 	background-color: #FB0C29;
 	border: 1px solid #FB0C29;
@@ -339,3 +342,22 @@ textarea{
 	width: 20px;
 	overflow: hidden;
 } */
+/* 回到顶部按钮 */
+#back_top{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	position: fixed;
+	bottom: 50px;
+	border: 1px solid #45b4e5;
+	background-color: #fff;
+	z-index: 999;
+	cursor: pointer;
+	opacity: 0;
+	transition: 0.2s linear;
+	text-align: center;
+}
+#back_top i{
+	color: #45b4e5;
+	font-size: 32px;
+}

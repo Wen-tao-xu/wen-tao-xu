@@ -116,6 +116,7 @@ function createIcon(json) {
 }
 initMap(); //创建和初始化地图
 // 鼠标移入效果
+var moreList=document.getElementsByClassName("morelist")[0];
 var showMap=document.getElementsByClassName("map")[0];
 var locationMap=document.getElementById("dituContent");
 showMap.onclick=function(e){
